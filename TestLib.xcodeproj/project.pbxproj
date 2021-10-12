@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B466428F2715BC9800F63342 /* TestLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B466428D2715BC9800F63342 /* TestLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4C5FAC42715C11100157B9D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5FAC32715C11100157B9D /* LoginController.swift */; };
+		B4EA18702715C41700AA5F0D /* LoggedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA186F2715C41700AA5F0D /* LoggedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B466428A2715BC9800F63342 /* TestLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B466428D2715BC9800F63342 /* TestLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLib.h; sourceTree = "<group>"; };
 		B466428E2715BC9800F63342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C5FAC32715C11100157B9D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B4EA186F2715C41700AA5F0D /* LoggedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,20 @@
 		B466428C2715BC9800F63342 /* TestLib */ = {
 			isa = PBXGroup;
 			children = (
+				B4C5FAC22715C0F100157B9D /* Controller */,
 				B466428D2715BC9800F63342 /* TestLib.h */,
 				B466428E2715BC9800F63342 /* Info.plist */,
 			);
 			path = TestLib;
+			sourceTree = "<group>";
+		};
+		B4C5FAC22715C0F100157B9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4C5FAC32715C11100157B9D /* LoginController.swift */,
+				B4EA186F2715C41700AA5F0D /* LoggedController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +108,7 @@
 				TargetAttributes = {
 					B46642892715BC9800F63342 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C5FAC42715C11100157B9D /* LoginController.swift in Sources */,
+				B4EA18702715C41700AA5F0D /* LoggedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		B46642932715BC9800F63342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5CF8RPL35M;
@@ -277,6 +295,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Moskwinow.app.TestLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +305,7 @@
 		B46642942715BC9800F63342 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5CF8RPL35M;
@@ -301,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Moskwinow.app.TestLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
